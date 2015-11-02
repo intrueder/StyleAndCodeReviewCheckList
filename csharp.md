@@ -74,7 +74,7 @@ interface IMyInterface
 	}
 ```
 
-13. Use meaningful namespaces such as the produc name or the company name
+13. Use meaningful namespaces such as the product name or the company name
 
 14. Avoid fully qualified type names. Use the `using` statement
 
@@ -240,7 +240,7 @@ MyMethod(message => MessageBox.Show(message));
 7. Do not manually edit any machine-generated code
 	a) If modifying machine generated code, modify the format and style to match this coding standard
 	
-8. Avoid comments that explaing the obvious. Code should be self-explanatory. Good codfe with readable variable and method names should not require comments
+8. Avoid comments that explaing the obvious. Code should be self-explanatory. Good code with readable variable and method names should not require comments
 
 9. Document only operational assumptions, alogrithm insights and so on
 
@@ -432,15 +432,15 @@ class MyClass
 
 38. Never hardcode string that will be presented to end users. Use resources instead
 
-39. Never hardcode strings taht might change based on deployment such as connection strings
+39. Never hardcode strings that might change based on deployment such as connection strings
 
-40. Use `string.Empty` instead of ""
+40. Use `String.Empty` instead of ""
 ```c#
 // Avoid
 string myString = "";
 
 // Correct
-string myString = string.Empty;
+string myString = String.Empty;
 ```
 
 41. Never use `goto`
@@ -463,4 +463,3 @@ int CalcPower(int number, int power)
 	return result;
 }
 ```
-
