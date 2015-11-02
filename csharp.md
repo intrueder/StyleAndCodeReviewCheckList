@@ -11,7 +11,7 @@ public class SomeClass
 }
 ```
 
-2. Use camcel casing for local variable names and method arguments
+2. Use camel casing for local variable names and method arguments
 ```c#
 void SomeMethod(int someNumber)
 {
@@ -42,17 +42,23 @@ interface IMyInterface
 	a) Avoid single character variable names, such as i or t. Use `index` or `temp` instead
 	b) Do not abbreviate words (such as `num` instead of `number`)
 	
-11. Always use C# predefined types rather than the aliases in the `System` namespace
+11. Always use C# predefined types rather than the aliases in the `System` namespace when declaring local variable, class field or method argument. But use types from `System` namespace when using static members
 ```c#
 	// Avoid
 	Object myObject;
 	String myString;
 	Int32 myNumber;
+	string.Empty
+	int.MaxValue
+	string.IsNullOrEmpty()
 	
 	// Correct
 	object myObject;
 	string myString;
 	int myNumber;
+	String.Empty
+	Int32.MaxValue
+	String.IsNullOrEmpty()	
 ```
 
 12. With generics, use capital letters for types. Reserve suffixing Type when dealing with the .Net type `Type` 
